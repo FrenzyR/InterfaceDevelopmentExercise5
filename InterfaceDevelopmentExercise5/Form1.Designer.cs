@@ -49,6 +49,7 @@ namespace InterfaceDevelopmentExercise5
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -69,6 +70,7 @@ namespace InterfaceDevelopmentExercise5
 
         private System.Windows.Forms.TextBox textBox1;
         private Button button1;
+
     }
 }
 

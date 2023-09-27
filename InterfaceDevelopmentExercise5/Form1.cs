@@ -21,5 +21,22 @@ namespace InterfaceDevelopmentExercise5
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Cogemos el mensaje que pusimos en el textBox y lo pasamos a string
+            string newTitle = textBox1.Text;
+            // Creamos el messageBox
+            DialogResult result = MessageBox.Show(
+                "¿Desea poner el siguiente texto como título del formulario principal?\n\n" + newTitle,
+                "Confirmar Cambio de Título",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Text = newTitle;
+            }
+        }
     }
 }
